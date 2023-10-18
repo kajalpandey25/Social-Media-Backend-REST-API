@@ -1,0 +1,26 @@
+{
+  "name": "social-media-backend-rest-api",
+  "version": "1.0.0",
+  "description": "Blog Application",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kajalpandey25/Social-Media-Backend-REST-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kajalpandey25/Social-Media-Backend-REST-API/issues"
+  },
+  "homepage": "https://github.com/kajalpandey25/Social-Media-Backend-REST-API#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.6.3",
+    "nodemon": "^3.0.1"
+  }
+}
