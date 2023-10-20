@@ -1,6 +1,7 @@
 import User from "../model/User";
 import bcrypt from 'bcryptjs';
 
+// Step-1:-> GET Method ( All User)
 export const getAllUser = async(req, res, next) => {
     let users;
     try{
@@ -15,6 +16,7 @@ export const getAllUser = async(req, res, next) => {
 
 };
 
+// Step-2:-> POST Method (User Signup)
 export const signup = async (req, res, next) => {
     const { name, email, password } = req.body;
 
@@ -34,6 +36,7 @@ export const signup = async (req, res, next) => {
        name,
        email,
        password: hashedPassword,
+       blogs:[],
     });
 
     try{
@@ -43,6 +46,8 @@ export const signup = async (req, res, next) => {
     }
     return res.status(201).json({ user });
 };
+
+// Step-3:-> POST Method (User Login)
 
  export const login = async(req, res, next) => {
     const { email, password } = req.body;
